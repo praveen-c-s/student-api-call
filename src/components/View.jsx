@@ -10,7 +10,7 @@ const View = () => {
     )
 
     const fetchData=()=>{
-axios.get("http://18.144.111.41/view_all_students.php").then((response)=>{
+axios.post("http://18.144.111.41/view_all_students.php").then((response)=>{
     changeStudent(response.data)
 
   }
