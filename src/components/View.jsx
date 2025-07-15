@@ -34,6 +34,8 @@ axios.get("http://18.144.111.41/view_all_students.php").then((response)=>{
                       <th scope="col">name</th>
                       <th scope="col">admmision_number</th>
                       <th scope="col">roll_no</th>
+                      <th scope="col">College</th>
+
                     </tr>
                   </thead>
                   <tbody>
@@ -45,6 +47,7 @@ axios.get("http://18.144.111.41/view_all_students.php").then((response)=>{
                           <td>{value.name}</td>
                           <td>{value.admission_number}</td>
                           <td>{value.roll_number}</td>
+                          <td>{value.college}</td>
                         </tr>
 
                       )
